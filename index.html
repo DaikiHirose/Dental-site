@@ -1,57 +1,325 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ゆたか歯科クリニック</title>
-<link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
-<script src="https://kit.fontawesome.com/7fcc2f4504.js" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>ひろせ歯科クリニック</title>
+  <script src="https://kit.fontawesome.com/7fcc2f4504.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-<header class="header" id="header">
-  <div class="header__content">
-    <h1 class="header__title">ひろせ歯科クリニック</h1>
-    <p class="header__menu">メニュー<i class="fas fa-bars"></i> </p>
-    <hr>
-  </div>
-</header>
-<main>
-  <section class="top">
-    <h1 class="top__title">ひろせ歯科クリニック</h1>
-    <p class="top__text">広島県廿日市市、広瀬駅近くの歯科医院です</p>
-    <p class="top__link"><a href="#">ご予約はこちらから</a></p></section>
-	
-  <section class="greet">
-    <h2 class="greet__title">良い歯は人生の質を高めます。</h2>
-    <div class="greet__content"> 
-	　<img src="" alt="">
-      <p class="greet__text">ひろせ歯科クリニックは「患者さんに永くご自身の歯で健康に過ごしていただくこと」を何よりも大切と考えている歯科医院です。
-        そのために、患者さんのご希望やご心配事をしっかりとお聴きした上で、歯科用CTなどの最新機器を用いた精確な診査診断を行い、どのような治療を行えば良いかを立案していきます。</p>
+
+  <header class="header bg-dark" id="header">
+    <h1 class="header__title text-light"><a href="#">ひろせ歯科クリニック</a></h1>
+    <p class="header__menu text-light"><a href="#">メニュー <i class="fas fa-bars"></i></a></p>
+  </header>
+
+  <!-- <nav class="gnavi">
+    <ul class="gnavi__list">
+      <li class="gnavi__item"><a href="#"><i class="fas fa-home"></i></a></li>
+      <li class="gnavi__item"><a href="#">ごあいさつ</a></li>
+      <li class="gnavi__item"><a href="#">診療内容</a></li>
+      <li class="gnavi__item"><a href="#">医院紹介</a></li>
+      <li class="gnavi__item"><a href="#">求人情報</a></li>
+      <li class="gnavi__link"><a href="#">ご予約はこちらから</a></li>
+      <li class="gnavi__link"><a href="#">お問い合わせ</a></li>
+    </ul>
+  </nav> -->
+
+  <main>
+
+    <section class="top">
+      <div class="top__box">
+        <h1 class="top__title text-light">ひろせ歯科クリニック</h1>
+        <p class="top__text text-light">広島県廿日市市、宮島口駅近くの歯科医院です</p>
+        <p class="top__link"><a href="#" class="btn btn-info">予約はこちらから</a></p>
+      </div>
+    </section>
+
+    <section class="greet bg-white">
+      <h2 class="greet__title text-dark">良い歯は人生の質を高めます。</h2>
+      <div class="container-fluid">
+        <div class="greet__content row">
+          <div class="col-xl-3 offset-xl-2 col-lg-4 offset-lg-1 col-sm-10 offset-sm-1 col-12"><img src="images/entrance.jpg" alt="エントランス">
+          </div>
+          <div class="col-xl-5 col-lg-6 col-sm-10 offset-sm-1 col-12 d-flex align-items-center">
+            <p class="greet__text text-secondary">ひろせ歯科クリニックは「患者さんに永くご自身の歯で健康に過ごしていただくこと」を何よりも大切と考えている歯科医院です。
+              そのために、患者さんのご希望やご心配事をしっかりとお聴きした上で、歯科用CTなどの最新機器を用いた精確な診査診断を行い、どのような治療を行えば良いかを立案していきます。</p>
+          </div>
+        </div><!-- row -->
+      </div><!-- container -->
+      <p class="greet__link text-center"><a href="#" class="btn btn-info">続きを読む</a> </p>
+      <div class="container-fluid">
+        <div class="row">
+          <p class="greet__subText col-xl-8 offset-xl-2 col-sm-10 offset-sm-1 col-12 text-secondary">
+            もちろん、その計画は患者さん自身にもご理解、ご納得いただけるようご説明をさせていただきます。
+            実際の治療においては、診査診断と同様に、精密な治療を行うため、治療内容によってはマイクロスコープなどを駆使して最善を尽くしていきます。
+            <br><br>
+            そして治療が終了した後、ここからが「永くご自身の歯で健康に過ごしていただく」ために最も大切なプロセスです。
+            “予防”のためのメインテナンスです。
+            歯科治療の約７割は以前治療した歯が再度疾患に侵されてしまったことによる再治療です。同じ歯を削る治療を繰り返す度にご自身の歯は少なくなり、最終的には抜歯となってしまいます。大切なことは、一度治療を行った歯の再発を防ぎ、健康な歯は健康なまま疾患とならないようにメインテナンスケアを行っていくことです。
+            <br><br>
+            会話を楽しむ”、“思いっきり笑う”、“大好きな料理を食べる”、私たちが日常の中で行っている多くのことは全て歯が土台となっていることばかりです。
+            良い歯は人生の質を間違いなく高めます。
+            皆さまの生活の質を高める良きパートナーとして、当院をご利用ください。どうぞよろしくお願い申し上げます。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="info">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 col-12">
+            <div class="row info__height">
+              <div class="col-xl-4 col-lg-6 col-12">
+                <section class="info__box"> <img src="images/dental.jpg" alt="治療台">
+                  <h3 class="info__title text-dark">診療内容</h3>
+                  <p class="info__text text-secondary">むし歯治療を始め、幅広い治療に対応しております。</p>
+                  <p class="info__link"><a href="#" class="btn btn-secondary">さらに見る</a></p>
+                </section>
+              </div>
+              <div class="col-xl-4 col-lg-6 col-12">
+                <section class="info__box"> <img src="images/room.jpg" alt="待合室">
+                  <h3 class="info__title text-dark">医院紹介</h3>
+                  <p class="info__text text-secondary">当院の雰囲気や設備、診療の流れをご紹介いたします。</p>
+                  <p class="info__link"><a href="#" class="btn btn-secondary">さらに見る</a></p>
+                </section>
+              </div>
+              <div class="col-xl-4 col-lg-6 col-12">
+                <section class="info__box"> <img src="images/recruit.jpg" alt="歯科医募集">
+                  <h3 class="info__title text-dark">求人情報</h3>
+                  <p class="info__text text-secondary">新しい医院で一緒に頑張っていただける、明るく元気な方を募集しております。</p>
+                  <p class="info__link"><a href="#" class="btn btn-secondary">さらに見る</a></p>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="intro bg-white">
+      <h2 class="intro__title text-dark">院長紹介</h2>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-4 offset-lg-2 col-md-5 offset-md-1 col-12"><img src="images/doctor.jpg" alt="クリニック院長">
+          </div>
+          <div class="intro__box col-lg-4 col-md-5 col-12">
+            <h3 class="intro__name text-dark">広瀬 大軌<span class="intro__small">（ひろせ だいき）</span></h3>
+            <dl class="intro__list">
+              <dt class="intro__list__title text-dark">院長経歴</dt>
+              <hr>
+              <dd class="intro__list__data text-secondary">広島大学卒業</dd>
+              <hr>
+              <dd class="intro__list__data text-secondary">広島大学病院研修医</dd>
+              <hr>
+              <dd class="intro__list__data text-secondary">広島市歯科医院勤務</dd>
+              <br>
+              <dd class="intro__list__data text-secondary">JIADSペリオコース</dd>
+              <hr>
+              <dd class="intro__list__data text-secondary">JIADSインプラントコース</dd>
+              <hr>
+              <dd class="intro__list__data text-secondary">JIADSインプラントコース</dd>
+              <hr>
+              <dd class="intro__list__data text-secondary">広島大学卒後臨床研修</dd>
+              <hr>
+              <dd class="intro__list__data text-secondary">Y.E.Sエンドセミナー</dd>
+              <hr>
+              <dd class="intro__list__data text-secondary">ひろせ歯科医院 開院</dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ginfo">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 col-xl-4 offset-xl-2">
+            <section class="schedule">
+              <h2 class="schedule__title">診療時間</h2>
+              <div class="container">
+                <div class="row">
+                  <div class="col-12 col-lg-10 offset-lg-1">
+                    <div class="table-responsive">
+                      <table class="schedule__table table table-bordered">
+
+                        <thead class="schedule__head">
+                          <tr class="schedule__row text-light bg-primary">
+                            <th scope="col">診療時間</th>
+                            <th scope="col">月</th>
+                            <th scope="col">火</th>
+                            <th scope="col">水</th>
+                            <th scope="col">木</th>
+                            <th scope="col">金</th>
+                            <th scope="col">土</th>
+                          </tr>
+                        </thead>
+                        <tbody class="schedule__body">
+                          <tr class="schedule__row">
+                            <th scope="row">9:00〜13:00</th>
+                            <td><i class="fas fa-circle text-primary"></i></td>
+                            <td><i class="fas fa-circle text-primary"></i></td>
+                            <td><i class="fas fa-circle text-primary"></i></td>
+                            <td><i class="fas fa-times"></i></td>
+                            <td><i class="fas fa-circle text-primary"></i></td>
+                            <td><i class="fas fa-circle text-primary"></i></td>
+                          </tr>
+                          <tr class="schedule__row bg-light">
+                            <th scope="row">14:30〜19:00</th>
+                            <td><i class="fas fa-circle text-primary"></i></td>
+                            <td><i class="fas fa-circle text-primary"></i></td>
+                            <td><i class="fas fa-circle text-primary"></i></td>
+                            <td><i class="fas fa-times"></i></td>
+                            <td><i class="fas fa-circle text-primary"></i></td>
+                            <td><i class="far fa-circle text-primary"></i></td>
+                          </tr>
+                        </tbody>
+
+                      </table>
+                    </div>
+                    <p class="schedule__text">&#x203B;<strong>休診日</strong>：木曜日・日曜日・祝祭日<br>
+                      &#x203B;土曜日午後は、14:30〜18:00</p>
+                    <div class="schedule__g">
+                      <iframe
+                        src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=Asia%2FTokyo&amp;src=aGlyb3NlLmRhaWtpLjA5MjhAZ21haWwuY29t&amp;src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;src=amEuamFwYW5lc2UjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%23039BE5&amp;color=%2333B679&amp;color=%230B8043"
+                        style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <div class="col-12 col-xl-4">
+            <section class="access">
+              <h2 class="access__title">アクセスマップ</h2>
+              <div class="container">
+                <div class="row">
+                  <div class="col-12 col-lg-10 offset-lg-1">
+                    <div class="access__g">
+                      <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d6590.860555143701!2d132.30007342582567!3d34.314059972141855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z5a6u5bO25Y-j!5e0!3m2!1sja!2sjp!4v1607048044954!5m2!1sja!2sjp"
+                        width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""
+                        aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                    <p class="access__text text-secondary mt-3">JR 宮島口駅より徒歩4分</p>
+                    <hr>
+                    <p class="access__text text-secondary">広島電鉄 宮島口駅より徒歩5分</p>
+                    <br>
+                    <p class="access__text text-secondary">所在地：<br>
+                      〒733−0863<br>
+                      広島県廿日市市宮島口X-XX-XX<br>
+                      宮島口1丁目交差点すぐそば<br>
+                      ◆駐車場8台完備 ◆バリアフリー設計</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="news">
+      <h2 class="news__title">お知らせ</h2>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-10 offset-lg-1 col-xl-8 offset-xl-2">
+            <dl class="news__list text-secondary">
+              <dt class="news__list__title text-secondary">
+                <time datetime="2020-11-15">2020/11/15</time></dt>
+              <dd class="news__list__data">診療台増設により予約が取りやすくなりました。</dd>
+            </dl>
+            <hr>
+            <dl class="news__list text-secondary">
+              <dt class="news__list__title text-secondary"><time datetime="2020-11-01">2020/11/01</time></dt>
+              <dd class="news__list__data">勤務医を募集しています。見学も受け付けておりますのでご興味のある方はお気軽にご連絡ください。</dd>
+            </dl>
+            <hr>
+            <dl class="news__list text-secondary">
+              <dt class="news__list__title text-secondary"><time datetime="2020-10-15">2020/10/15</time></dt>
+              <dd class="news__list__data">院長が勉強会に出席するため、毎月第3水曜日を休診日とし、代わりに翌日の木曜日を診療日としております。ご迷惑をおかけしますがよろしくお願いいたします。
+              </dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="reserve">
+      <h2 class="reserve__title">ご予約</h2>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="reserve__box col-lg-10 offset-lg-1 col-xl-8 offset-xl-2">
+            <h3 class="reserve__subTitle">お電話でのご予約</h3>
+            <p class="reserve__tel"><a href="tel:082XXXXXXX" class="text-info">(082)XXX-XXXX</a></p>
+            <p class="reserve__subText text-secondary">※おかけ間違いにご注意ください</p>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="reserve__box col-lg-10 offset-lg-1 col-xl-8 offset-xl-2">
+            <h3 class="reserve__subTitle">２４時間インターネット予約</h3>
+            <p class="reserve__text text-secondary">初診の方は、便利なインターネット予約をご利用ください。</p>
+            <br>
+            <p class="reserve__subText text-secondary">&#x203B;予約確定後、こちらから確認のご連絡をさせて頂きます。<br>
+              &#x203B;<strong>ネット予約は初診の方のみ対応しております。</strong>再診の方はお電話にてご予約ください。<br>
+              &#x203B;ご希望の時間が表示されなくても予約が可能な場合がございます。お気軽にお問い合わせ下さい。</p>
+            <p class="reserve__link"><a href="#" class="btn btn-info">インターネット予約へ移動</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact">
+      <h2 class="contact__title">お問い合わせ</h2>
+      <p class="contct__text">お問い合わせの際は、下記のメールフォームをご利用ください。</p>
+      <form action="">
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer" id="footer">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 col-md-8 offset-md-2">
+          <ul class="footer__link">
+            <li class="footer__link__item"><a href="#"><i class="fas fa-home"></i></a></li>
+            <li class="footer__link__item"><a href="#">ごあいさつ</a></li>
+            <li class="footer__link__item"><a href="#">診療内容</a></li>
+            <li class="footer__link__item"><a href="#">医院紹介</a></li>
+            <li class="footer__link__item"><a href="#">求人情報</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-8 offset-md-2">
+          <ul class="footer__contact">
+            <li class="footer__contact__item">〒739-XXXX</li>
+            <li class="footer__contact__item">広島県廿日市市宮島口X-XX-XX</li>
+            <li class="footer__contact__item">082-XXX-XXXX</li>
+          </ul>
+        </div>
+      </div>
     </div>
-	  <p class="greet__link"><a href="#">続きを読む</a></p>
-  </section>
-	
-	<section class="info">
-		<section class="info__box">
-			<img src="" alt="">
-			<h3>診療内容</h3>
-			<p>むし歯治療を始め、幅広い治療に対応しております。</p>
-			<p><a href="#">さらに見る</a></p>
-		</section>
-		<section class="info__box">
-			<img src="" alt="">
-			<h3>医院紹介</h3>
-			<p>当院の雰囲気や設備、診療の流れをご紹介いたします。</p>
-			<p><a href="#">さらに見る</a></p>
-		</section>
-		<section class="info__box">
-			<img src="" alt="">
-			<h3>求人情報</h3>
-			<p>新しい医院で一緒に頑張っていただける、明るく元気な方を募集しております。</p>
-			<p><a href="#">さらに見る</a></p>
-		</section>
-	</section>
-</main>
+    <p class="footer__copyright">&copy; Hirose dental clinic. All rights reserved.</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
