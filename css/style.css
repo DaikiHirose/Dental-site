@@ -78,7 +78,7 @@ hr {
 
 .top {
   width: 100%;
-  height: 80vh;
+  height: 90vh;
   position: relative;
 }
 
@@ -95,8 +95,32 @@ hr {
   font-size: 3rem;
 }
 
+@media (max-width: 991.98px) {
+  .top__title {
+    font-size: 1.8em;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .top__title {
+    font-size: 1.2em;
+  }
+}
+
 .top__text {
   font-size: 1.5rem;
+}
+
+@media (max-width: 991.98px) {
+  .top__text {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .top__text {
+    font-size: .5em;
+  }
 }
 
 .top__link {
@@ -117,6 +141,12 @@ hr {
   padding: 1em 0 2em;
 }
 
+@media (max-width: 575.98px) {
+  .greet__title {
+    font-size: 1.2em;
+  }
+}
+
 .greet__content img {
   width: 100%;
   border-radius: 3%;
@@ -125,6 +155,13 @@ hr {
 .greet__text {
   font-size: 1.1em;
   line-height: 1.8em;
+  text-align: justify;
+}
+
+@media (max-width: 575.98px) {
+  .greet__text {
+    font-size: .9em;
+  }
 }
 
 .greet__link {
@@ -137,7 +174,14 @@ hr {
 .greet__subText {
   font-size: 1.1em;
   line-height: 1.8em;
+  text-align: justify;
   margin-top: 2em;
+}
+
+@media (max-width: 575.98px) {
+  .greet__subText {
+    font-size: .9em;
+  }
 }
 
 .info {
@@ -152,9 +196,6 @@ hr {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
 }
 
 .info__box {
@@ -191,6 +232,12 @@ hr {
   line-height: 1.8em;
 }
 
+@media (max-width: 575.98px) {
+  .info__text {
+    font-size: .9em;
+  }
+}
+
 .intro {
   width: 100%;
   padding: 3em 0;
@@ -200,6 +247,12 @@ hr {
   font-size: 2em;
   text-align: center;
   padding: 1em 0 2em;
+}
+
+@media (max-width: 575.98px) {
+  .intro__title {
+    font-size: 1.2em;
+  }
 }
 
 .intro img {
@@ -228,6 +281,7 @@ hr {
 
 @media (max-width: 767.98px) {
   .intro__list {
+    font-size: .9em;
     text-align: center;
   }
 }
@@ -258,6 +312,12 @@ hr {
   padding: 1em 0 2em;
 }
 
+@media (max-width: 575.98px) {
+  .schedule__title {
+    font-size: 1.2em;
+  }
+}
+
 .schedule__table {
   width: 100%;
 }
@@ -271,8 +331,15 @@ hr {
   padding: 1.5em;
 }
 
+@media (max-width: 575.98px) {
+  .schedule__text {
+    font-size: .9em;
+  }
+}
+
 .schedule__g {
   height: 0;
+  overflow: hidden;
   padding-bottom: 100%;
   position: relative;
 }
@@ -297,8 +364,15 @@ hr {
   padding: 1em 0 2em;
 }
 
+@media (max-width: 575.98px) {
+  .access__title {
+    font-size: 1.2em;
+  }
+}
+
 .access__g {
   height: 0;
+  overflow: hidden;
   padding-bottom: 100%;
   position: relative;
 }
@@ -317,6 +391,12 @@ hr {
   margin-bottom: 0;
 }
 
+@media (max-width: 575.98px) {
+  .access__text {
+    font-size: .9em;
+  }
+}
+
 .news {
   width: 100%;
   padding: 3em 0;
@@ -329,10 +409,22 @@ hr {
   padding: 1em 0 2em;
 }
 
+@media (max-width: 575.98px) {
+  .news__title {
+    font-size: 1.2em;
+  }
+}
+
 .news__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media (max-width: 575.98px) {
+  .news__list {
+    font-size: .9em;
+  }
 }
 
 .news__list__title {
@@ -351,6 +443,12 @@ hr {
   padding: 1em 0 2em;
 }
 
+@media (max-width: 575.98px) {
+  .reserve__title {
+    font-size: 1.2em;
+  }
+}
+
 .reserve__box {
   padding: 2em;
   text-align: center;
@@ -361,9 +459,31 @@ hr {
   font-size: 1.5em;
 }
 
+@media (max-width: 575.98px) {
+  .reserve__subTitle {
+    font-size: 1.2em;
+  }
+}
+
+.reserve__tel {
+  font-size: 2.5em;
+}
+
+@media (max-width: 575.98px) {
+  .reserve__tel {
+    font-size: 1.5em;
+  }
+}
+
 .reserve__subText {
   display: inline-block;
   text-align: left;
+}
+
+@media (max-width: 575.98px) {
+  .reserve__subText {
+    font-size: .9em;
+  }
 }
 
 .contact {
@@ -376,6 +496,12 @@ hr {
   font-size: 2em;
   text-align: center;
   padding: 1em 0 2em;
+}
+
+@media (max-width: 575.98px) {
+  .contact__title {
+    font-size: 1.2em;
+  }
 }
 
 .footer {
@@ -416,6 +542,12 @@ hr {
   }
 }
 
+@media (max-width: 575.98px) {
+  .footer__link {
+    font-size: .9em;
+  }
+}
+
 .footer__link__item {
   margin: 2%;
 }
@@ -425,7 +557,19 @@ hr {
   text-align: center;
 }
 
+@media (max-width: 575.98px) {
+  .footer__contact {
+    font-size: .9em;
+  }
+}
+
 .footer__copyright {
   text-align: center;
+}
+
+@media (max-width: 575.98px) {
+  .footer__copyright {
+    font-size: .9em;
+  }
 }
 /*# sourceMappingURL=style.css.map */
