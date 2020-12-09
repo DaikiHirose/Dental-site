@@ -10,29 +10,64 @@
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
+  <!-- drawer.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/css/drawer.min.css">
+  <!-- jquery & iScroll -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
+  <!-- drawer.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<!-- <i class="fas fa-bars"></i></a> -->
 
-  <header class="header bg-dark" id="header">
+<body class="drawer drawer--right">
+
+  <header class="header bg-dark" id="header" role="banner">
     <h1 class="header__title text-light"><a href="#">ひろせ歯科クリニック</a></h1>
-    <p class="header__menu text-light"><a href="#">メニュー <i class="fas fa-bars"></i></a></p>
+    <button type="button" class="header__btn drawer-toggle drawer-hamburger">
+      <span class="sr-only">toggle navigation</span>
+      <span class="drawer-hamburger-icon"></span>
+    </button>
+    <nav class="gnavi drawer-nav" role="navigation">
+      <ul class="gnavi__list drawer-menu">
+        <li class="gnavi__item pl-2"><a class="drawer-brand" href="#"><i class="fas fa-home"></i></a></li>
+        <li class="gnavi__item"><a class="drawer-menu-item" href="#">ごあいさつ</a></li>
+        <hr>
+        <li class="gnavi__item"><a class="drawer-menu-item" href="#">診療内容</a></li>
+        <hr>
+        <li class="gnavi__item"><a class="drawer-menu-item" href="#">医院紹介</a></li>
+        <hr>
+        <li class="gnavi__item"><a class="drawer-menu-item" href="#">求人情報</a></li>
+        <li class="gnavi__link mt-4"><a class="btn btn-info text-light drawer-menu-item" href="#">ご予約はこちらから</a></li>
+        <li class="gnavi__link mt-2"><a class="btn border drawer-menu-item" href="#">お問い合わせ</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <!-- <nav class="gnavi">
-    <ul class="gnavi__list">
-      <li class="gnavi__item"><a href="#"><i class="fas fa-home"></i></a></li>
-      <li class="gnavi__item"><a href="#">ごあいさつ</a></li>
-      <li class="gnavi__item"><a href="#">診療内容</a></li>
-      <li class="gnavi__item"><a href="#">医院紹介</a></li>
-      <li class="gnavi__item"><a href="#">求人情報</a></li>
-      <li class="gnavi__link"><a href="#">ご予約はこちらから</a></li>
-      <li class="gnavi__link"><a href="#">お問い合わせ</a></li>
-    </ul>
-  </nav> -->
+  <!-- <body class="drawer drawer--left">
+    <header role="banner">
+      <button type="button" class="drawer-toggle drawer-hamburger">
+        <span class="sr-only">toggle navigation</span>
+        <span class="drawer-hamburger-icon"></span>
+      </button>
+      <nav class="drawer-nav" role="navigation">
+        <ul class="drawer-menu">
+          <li><a class="drawer-brand" href="#">Brand</a></li>
+          <li><a class="drawer-menu-item" href="#">Nav1</a></li>
+          <li><a class="drawer-menu-item" href="#">Nav2</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main role="main"> -->
+  <!-- Page content -->
+  <!-- </main>
+  </body> -->
 
-  <main>
+
+
+  <main role="main">
 
     <section class="top">
       <div class="top__box">
@@ -194,7 +229,7 @@
                       &#x203B;土曜日午後は、14:30〜18:00</p>
                     <div class="schedule__g">
                       <iframe
-                        src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=Asia%2FTokyo&amp;src=aGlyb3NlLmRhaWtpLjA5MjhAZ21haWwuY29t&amp;src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;src=amEuamFwYW5lc2UjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%23039BE5&amp;color=%2333B679&amp;color=%230B8043"
+                        src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=Asia%2FTokyo&amp;src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;src=amEuamFwYW5lc2UjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%2333B679&amp;color=%230B8043"
                         style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
                     </div>
                   </div>
@@ -285,9 +320,42 @@
 
     <section class="contact">
       <h2 class="contact__title">お問い合わせ</h2>
-      <p class="contct__text">お問い合わせの際は、下記のメールフォームをご利用ください。</p>
-      <form action="">
-      </form>
+      <p class="contact__text">お問い合わせの際は、下記のメールフォームをご利用ください。</p>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xl-8 offset-xl-2 col-10 offset-1">
+            <form action="index.html" method="post">
+              <div class="conatainer">
+                <div class="row">
+                  <div class="form-group col-12 col-lg-6">
+                    <label for="name">氏名<sapn class="text-danger">（必須）</sapn></label>
+                    <input type="text" class="form-control bg-light" id="name" placeholder="お名前をご入力ください" required>
+                  </div>
+                  <div class="form-group col-12 col-lg-6">
+                    <label for="email">メールアドレス<sapn class="text-danger">（必須）</sapn></label>
+                    <input type="email" class="form-control bg-light" id="email" placeholder="アドレスをご入力ください" required>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="list">お問い合わせの種類</label><br>
+                <select class="form-control bg-light" id="list">
+                  <option value="">-</option>
+                  <option value="一般のお問い合わせ">一般のお問い合わせ</option>
+                  <option value="求人について">求人について</option>
+                  <option value="その他のお問い合わせ">その他のお問い合わせ</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message">お問い合わせ内容<sapn class="text-danger">（必須）</sapn></label>
+                <textarea id="message" name="message" rows="8" cols="80" class="form-control bg-light" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-info">送信</button>
+              <button type="reset" class="btn border">リセット</button>
+            </form>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 
@@ -317,15 +385,16 @@
     <p class="footer__copyright">&copy; Hirose dental clinic. All rights reserved.</p>
   </footer>
 
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
+    crossorigin="anonymous"></script> -->
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
     integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
     integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
     crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
