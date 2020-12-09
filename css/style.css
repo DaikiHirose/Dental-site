@@ -22,7 +22,6 @@ li {
 }
 
 a {
-  display: block;
   text-decoration: none;
   color: #f7f7f7;
 }
@@ -41,7 +40,7 @@ hr {
 
 .header {
   width: 100%;
-  padding-top: 1em;
+  height: 4em;
   position: fixed;
   top: 0;
   left: 0;
@@ -49,13 +48,13 @@ hr {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header__title {
-  font-size: 2em;
+  font-size: 1.5em;
   margin-left: 5%;
 }
 
@@ -74,6 +73,37 @@ hr {
   .header__menu {
     font-size: .5em;
   }
+}
+
+.gnavi .btn {
+  width: 200px;
+  margin: 0 auto;
+  padding: 1em;
+  border-radius: 3px;
+}
+
+.drawer-menu-item {
+  padding: 0.2em 1.5em;
+}
+
+.drawer-hamburger-icon,
+.drawer-hamburger-icon:after,
+.drawer-hamburger-icon:before {
+  background-color: #f7f7f7;
+  height: 1.5px;
+}
+
+.drawer-hamburger {
+  padding-right: 1em;
+}
+
+.drawer--right.drawer-open .drawer-hamburger {
+  right: 0px;
+}
+
+.drawer--right.drawer-open .drawer-hamburger-icon:after,
+.drawer--right.drawer-open .drawer-hamburger-icon:before {
+  background-color: #444;
 }
 
 .top {
@@ -502,6 +532,10 @@ hr {
   .contact__title {
     font-size: 1.2em;
   }
+}
+
+.contact__text {
+  text-align: center;
 }
 
 .footer {
