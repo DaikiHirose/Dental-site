@@ -229,7 +229,7 @@
                       &#x203B;土曜日午後は、14:30〜18:00</p>
                     <div class="schedule__g">
                       <iframe
-                        src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=Asia%2FTokyo&amp;src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;src=amEuamFwYW5lc2UjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%2333B679&amp;color=%230B8043&showPrint=0&showTabs=0"
+                        src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=Asia%2FTokyo&amp;src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;src=amEuamFwYW5lc2UjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%2333B679&amp;color=%230B8043&amp;showTitle=0&amp;showNav=1&amp;showPrint=1&amp;showCalendars=0&amp;showTz=0&amp;showDate=1&amp;showTabs=0"
                         style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
                     </div>
                   </div>
@@ -320,7 +320,7 @@
 
     <section class="contact">
       <h2 class="contact__title">お問い合わせ</h2>
-      
+
       <div class="container-fluid">
         <div class="row">
           <div class="col-xl-8 offset-xl-2 col-10 offset-1">
@@ -349,10 +349,17 @@
               </div>
               <div class="form-group">
                 <label for="message">お問い合わせ内容<sapn class="text-danger">（必須）</sapn></label>
-                <textarea id="message" name="message" rows="8" cols="80" class="form-control bg-light" required></textarea>
+                <textarea id="message" name="message" rows="8" cols="80" class="form-control bg-light"
+                  required></textarea>
               </div>
-              <button type="submit" class="btn btn-info">送信</button>
-              <button type="reset" class="btn border">リセット</button>
+              <div class="container">
+                <div class="row">
+                  <div class="conatct__btn col text-center">
+                    <button type="submit" class="btn btn-info">送信</button>
+                    <button type="reset" class="btn border">リセット</button>
+                  </div>
+                </div>
+              </div>
             </form>
           </div>
         </div>
