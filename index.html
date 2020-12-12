@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 
 <head>
   <meta charset="UTF-8">
@@ -22,26 +22,26 @@
 
 <!-- <i class="fas fa-bars"></i></a> -->
 
-<body class="drawer drawer--right">
+<body class="drawer drawer--right" id="home">
 
   <header class="header bg-dark" id="header" role="banner">
-    <h1 class="header__title text-light"><a href="#">ひろせ歯科クリニック</a></h1>
+    <h1 class="header__title text-light"><a href="https://daikihirose.github.io/Dental-site/">ひろせ歯科クリニック</a></h1>
     <button type="button" class="header__btn drawer-toggle drawer-hamburger">
       <span class="sr-only">toggle navigation</span>
       <span class="drawer-hamburger-icon"></span>
     </button>
     <nav class="gnavi drawer-nav" role="navigation">
       <ul class="gnavi__list drawer-menu">
-        <li class="gnavi__item pl-2"><a class="drawer-brand" href="#"><i class="fas fa-home"></i></a></li>
-        <li class="gnavi__item"><a class="drawer-menu-item" href="#">ごあいさつ</a></li>
+        <li class="gnavi__item pl-2"><a class="drawer-brand" href="#top"><i class="fas fa-home"></i></a></li>
+        <li class="gnavi__item"><a class="drawer-menu-item" href="#greet">ごあいさつ</a></li>
         <hr>
-        <li class="gnavi__item"><a class="drawer-menu-item" href="#">診療内容</a></li>
+        <li class="gnavi__item"><a class="drawer-menu-item" href="medical.html">診療内容</a></li>
         <hr>
-        <li class="gnavi__item"><a class="drawer-menu-item" href="#">医院紹介</a></li>
+        <li class="gnavi__item"><a class="drawer-menu-item" href="clinic.html">医院紹介</a></li>
         <hr>
         <li class="gnavi__item"><a class="drawer-menu-item" href="#">求人情報</a></li>
-        <li class="gnavi__link mt-4"><a class="btn btn-info text-light drawer-menu-item" href="#">ご予約はこちらから</a></li>
-        <li class="gnavi__link mt-2"><a class="btn border drawer-menu-item" href="#">お問い合わせ</a></li>
+        <li class="gnavi__link mt-4"><a class="btn btn-info text-light drawer-menu-item" href="#reserve">ご予約はこちらから</a></li>
+        <li class="gnavi__link mt-2"><a class="btn border drawer-menu-item" href="#contact">お問い合わせ</a></li>
       </ul>
     </nav>
   </header>
@@ -69,15 +69,15 @@
 
   <main role="main">
 
-    <section class="top">
+    <section class="top" id="#top">
       <div class="top__box">
         <h1 class="top__title text-light">ひろせ歯科クリニック</h1>
         <p class="top__text text-light">広島県廿日市市、宮島口駅近くの歯科医院です</p>
-        <p class="top__link"><a href="#" class="btn btn-info">予約はこちらから</a></p>
+        <p class="top__link"><a href="#reserve" class="btn btn-info">予約はこちらから</a></p>
       </div>
     </section>
 
-    <section class="greet bg-white">
+    <section class="greet bg-white" id="greet">
       <div class="container-fluid">
         <ivd class="row">
           <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 col-12">
@@ -122,7 +122,7 @@
                 <section class="info__box"> <img src="images/dental.jpg" alt="治療台">
                   <h3 class="info__title text-dark">診療内容</h3>
                   <p class="info__text text-secondary">むし歯治療を始め、幅広い治療に対応しております。</p>
-                  <p class="info__link"><a href="#" class="btn btn-secondary">さらに見る</a></p>
+                  <p class="info__link"><a href="medical.html" class="btn btn-secondary">さらに見る</a></p>
                 </section>
               </div>
               <div class="col-xl-4 col-lg-6 col-12 mb-3">
@@ -291,7 +291,7 @@
       </div>
     </section>
 
-    <section class="reserve">
+    <section class="reserve" id="reserve">
       <h2 class="reserve__title">ご予約</h2>
       <div class="container-fluid">
         <div class="row">
@@ -316,7 +316,7 @@
       </div>
     </section>
 
-    <section class="contact">
+    <section class="contact" id="contact">
       <h2 class="contact__title">お問い合わせ</h2>
 
       <div class="container-fluid">
@@ -370,10 +370,10 @@
       <div class="row">
         <div class="col-12 col-md-8 offset-md-2">
           <ul class="footer__link">
-            <li class="footer__link__item"><a href="#"><i class="fas fa-home"></i></a></li>
-            <li class="footer__link__item"><a href="#">ごあいさつ</a></li>
-            <li class="footer__link__item"><a href="#">診療内容</a></li>
-            <li class="footer__link__item"><a href="#">医院紹介</a></li>
+            <li class="footer__link__item"><a href="#top"><i class="fas fa-home"></i></a></li>
+            <li class="footer__link__item"><a href="#greet">ごあいさつ</a></li>
+            <li class="footer__link__item"><a href="medical.html">診療内容</a></li>
+            <li class="footer__link__item"><a href="clinic.html">医院紹介</a></li>
             <li class="footer__link__item"><a href="#">求人情報</a></li>
           </ul>
         </div>
