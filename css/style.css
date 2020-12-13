@@ -200,10 +200,10 @@ hr {
 }
 
 .greet__link {
-  width: 200px;
   margin: 0 auto;
   padding: 1em;
   border-radius: 3px;
+  text-align: center;
 }
 
 .greet__subText {
@@ -735,7 +735,7 @@ hr {
 
 .clinic__intro__text {
   font-size: 1.1em;
-  line-height: 1.5em;
+  line-height: 1.8em;
   text-align: justify;
 }
 
@@ -796,7 +796,7 @@ hr {
 
 .clinic__flow__text {
   font-size: 1.1em;
-  line-height: 1.5em;
+  line-height: 1.8em;
   text-align: justify;
 }
 
@@ -804,6 +804,133 @@ hr {
   .clinic__flow__text {
     font-size: .9em;
   }
+}
+
+.recruit {
+  width: 100%;
+  height: 40vh;
+  position: relative;
+}
+
+.recruit__box {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.recruit__title {
+  font-size: 3em;
+}
+
+@media (max-width: 991.98px) {
+  .recruit__title {
+    font-size: 1.8em;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .recruit__title {
+    font-size: 1.2em;
+  }
+}
+
+.recruit__text {
+  font-size: 1.5em;
+}
+
+@media (max-width: 991.98px) {
+  .recruit__text {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .recruit__text {
+    font-size: .7em;
+  }
+}
+
+.recruit__contact {
+  background-color: #fff;
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.recruit__contact__text {
+  font-size: 1.1em;
+  line-height: 1.8em;
+  text-align: justify;
+}
+
+@media (max-width: 575.98px) {
+  .recruit__contact__text {
+    font-size: .9em;
+  }
+}
+
+.recruit__flow {
+  width: 100%;
+  padding: 3em 0;
+  background-color: #fff;
+}
+
+.recruit__flow__subTitle {
+  font-size: 1.5em;
+}
+
+@media (max-width: 575.98px) {
+  .recruit__flow__subTitle {
+    font-size: .8em;
+  }
+}
+
+.recruit__flow__head, .recruit__flow__data {
+  font-size: 1.1em;
+  line-height: 1.8em;
+}
+
+@media (max-width: 575.98px) {
+  .recruit__flow__head, .recruit__flow__data {
+    font-size: .8em;
+  }
+}
+
+.recruit__flow__head {
+  width: 35%;
+}
+
+.recruit__flow__data {
+  width: 65%;
+}
+
+.recruit__flow__item {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+.recruit__flow__oItem {
+  list-style-type: lower-alpha;
+  list-style-position: inside;
+}
+
+.recruit__flow__nItem {
+  list-style-type: decimal;
+  list-style-position: inside;
 }
 
 .footer {
