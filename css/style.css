@@ -64,7 +64,7 @@ hr {
 
 @media (max-width: 575.98px) {
   .header__title {
-    font-size: 1.5em;
+    font-size: 1.2em;
   }
 }
 
@@ -855,7 +855,7 @@ hr {
 
 .recruit__contact {
   background-color: #fff;
-  height: 50vh;
+  padding: 4em 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
