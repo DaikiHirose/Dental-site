@@ -1,24 +1,5 @@
 'use strict';
 
-// クリックイベント ここから
-const textBtn = document.getElementById('textBtn');
-const subText = document.getElementById('subText');
-
-subText.style.display = 'none';
-
-function clickBtn() {
-  if (subText.style.display === 'block') {
-    // noneで非表示
-    subText.style.display = 'none';
-    textBtn.value = '続きを読む';
-  } else {
-    // blockで表示
-    subText.style.display = 'block';
-    textBtn.value = '閉じる';
-  }
-}
-// クリックイベント ここまで
-
 // ドロワーメニュー ここから
 $(document).ready(function () {
   $('.drawer').drawer();
@@ -42,3 +23,21 @@ $('.drawer').drawer({
   showOverlay: true
 });
 // ドロワーメニュー ここまで
+
+// クリックイベント ここから
+const textBtn = document.getElementById('textBtn');
+const subText = document.getElementById('subText');
+subText.style.display = 'none';
+
+function clickBtn() {
+  if (subText.style.display === 'block') {
+    // noneで非表示
+    subText.style.display = 'none';
+    textBtn.value = '続きを読む';
+  } else {
+    // blockで表示
+    subText.style.display = 'block';
+    textBtn.value = '閉じる';
+  }
+}
+// クリックイベント ここまで
