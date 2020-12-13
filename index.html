@@ -32,14 +32,14 @@
     </button>
     <nav class="gnavi drawer-nav" role="navigation">
       <ul class="gnavi__list drawer-menu">
-        <li class="gnavi__item pl-2"><a class="drawer-brand" href="index.html#top"><i class="fas fa-home"></i></a></li>
-        <li class="gnavi__item"><a class="drawer-menu-item" href="index.html#greet">ごあいさつ</a></li>
+        <li class="gnavi__item pl-2"><a class="drawer-brand" href="#top"><i class="fas fa-home"></i></a></li>
+        <li class="gnavi__item"><a class="drawer-menu-item" href="#greet">ごあいさつ</a></li>
         <hr>
         <li class="gnavi__item"><a class="drawer-menu-item" href="medical.html">診療内容</a></li>
         <hr>
         <li class="gnavi__item"><a class="drawer-menu-item" href="clinic.html">医院紹介</a></li>
         <hr>
-        <li class="gnavi__item"><a class="drawer-menu-item" href="#">求人情報</a></li>
+        <li class="gnavi__item"><a class="drawer-menu-item" href="recruit.html">求人情報</a></li>
         <li class="gnavi__link mt-4"><a class="btn btn-info text-light drawer-menu-item" href="#reserve">ご予約はこちらから</a></li>
         <li class="gnavi__link mt-2"><a class="btn border drawer-menu-item" href="#contact">お問い合わせ</a></li>
       </ul>
@@ -92,10 +92,15 @@
                 </div>
               </div><!-- row -->
             </div><!-- container -->
-            <p class="greet__link text-center"><a href="#" class="btn btn-info">続きを読む</a> </p>
+            <div class="greet__link">
+              <input type="button" value="続きを読む" class="btn btn-info" id="textBtn" onclick="clickBtn()">
+            </div>
+            
+            <!-- <button class="greet__link text-center btn btn-info" id="textBtn">続きを読む</button> -->
+            
             <div class="container-fluid">
-              <div class="row">
-                <p class="greet__subText col-12 text-secondary">
+              <div class="row">   
+                <p class="greet__subText col-12 text-secondary" id="subText">
                   もちろん、その計画は患者さん自身にもご理解、ご納得いただけるようご説明をさせていただきます。<br>
                   実際の治療においては、診査診断と同様に、精密な治療を行うため、治療内容によってはマイクロスコープなどを駆使して最善を尽くしていきます。
                   <br><br>
@@ -136,7 +141,7 @@
                 <section class="info__box"> <img src="images/recruit.jpg" alt="歯科医募集">
                   <h3 class="info__title text-dark">求人情報</h3>
                   <p class="info__text text-secondary">新しい医院で一緒に頑張っていただける、明るく元気な方を募集しております。</p>
-                  <p class="info__link"><a href="#" class="btn btn-secondary">さらに見る</a></p>
+                  <p class="info__link"><a href="recruit.html" class="btn btn-secondary">さらに見る</a></p>
                 </section>
               </div>
             </div>
@@ -374,7 +379,7 @@
             <li class="footer__link__item"><a href="#greet">ごあいさつ</a></li>
             <li class="footer__link__item"><a href="medical.html">診療内容</a></li>
             <li class="footer__link__item"><a href="clinic.html">医院紹介</a></li>
-            <li class="footer__link__item"><a href="#">求人情報</a></li>
+            <li class="footer__link__item"><a href="recruit.html">求人情報</a></li>
           </ul>
         </div>
       </div>

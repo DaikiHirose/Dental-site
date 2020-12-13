@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>求人情報 | ひろせ歯科クリニック</title>
+    <script src="https://kit.fontawesome.com/7fcc2f4504.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
+    <!-- drawer.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/css/drawer.min.css">
+    <!-- jquery & iScroll -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
+    <!-- drawer.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="drawer drawer--right">
+
+    <header class="header bg-dark" id="header" role="banner">
+        <h1 class="header__title text-light"><a href="https://daikihirose.github.io/Dental-site/">ひろせ歯科クリニック</a></h1>
+        <button type="button" class="header__btn drawer-toggle drawer-hamburger">
+            <span class="sr-only">toggle navigation</span>
+            <span class="drawer-hamburger-icon"></span>
+        </button>
+        <nav class="gnavi drawer-nav" role="navigation">
+            <ul class="gnavi__list drawer-menu">
+                <li class="gnavi__item pl-2"><a class="drawer-brand" href="index.html"><i class="fas fa-home"></i></a>
+                </li>
+                <li class="gnavi__item"><a class="drawer-menu-item" href="index.html#greet">ごあいさつ</a></li>
+                <hr>
+                <li class="gnavi__item"><a class="drawer-menu-item" href="medical.html">診療内容</a></li>
+                <hr>
+                <li class="gnavi__item"><a class="drawer-menu-item" href="clinic.html">医院紹介</a></li>
+                <hr>
+                <li class="gnavi__item"><a class="drawer-menu-item" href="#recruit">求人情報</a></li>
+                <li class="gnavi__link mt-4"><a class="btn btn-info text-light drawer-menu-item"
+                        href="index.html#reserve">ご予約はこちらから</a>
+                </li>
+                <li class="gnavi__link mt-2"><a class="btn border drawer-menu-item" href="index.html#contact">お問い合わせ</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main role="main">
+
+        <section class="recruit" id="recruit">
+            <div class="recruit__box">
+                <h1 class="recruit__title text-secondary">求人情報</h1>
+                <p class="recruit__text text-secondary">Recruit</p>
+            </div>
+        </section>
+
+        <section class="recruit__contact border-bottom">
+            <div class="container-fluid">
+                <div class="col-12 col-lg-8 offset-lg-2">
+                    <p class="recruit__contact__text text-center text-secondary">
+                        新しい医院で一緒に頑張っていただける、明るく元気な方を募集しております。<br>
+                        勤務条件に関しても、出来るだけご要望にお応えできるようにご相談にのらせていただきます。<br>
+                        ご質問やご相談は下記のメールフォームより承ります。<br>
+                        見学はいつでも可能です。お気軽にお問い合わせ下さい。</p>
+                    <p class="recruit__contact__link text-center p-4"><a href="index.html#contact"
+                            class="btn btn-outline-secondary">お問い合わせはこちら</a></p>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="recruit__flow">
+            <div class="container-fluid p-0">
+                <div class="col-12 col-lg-8 offset-lg-2 p-0">
+                    <h2 class="recruit__flow__title text-dark text-center p-4">募集要項</h2>
+                    <p class="recruit__flow__text text-secondary text-center">現在募集中の職種です。</p>
+                    <h3 class="recruit__flow__subTitle text-dark p-2 p-lg-4">歯科衛生士（正社員）</h3>
+                    <table class="recruit__flow__table table table-striped border-bottom mb-5">
+                        <tr class="recruit__flow__row">
+                            <th class="recruit__flow__head text-dark pl-lg-5" scope="row">雇用形態</th>
+                            <td class="recruit__flow__data text-secondary">正社員</td>
+                        </tr>
+                        <tr>
+                            <th class="recruit__flow__head text-dark pl-lg-5" scope="row">就業形態</th>
+                            <td class="recruit__flow__data text-secondary">フルタイム</td>
+                        </tr>
+                        <tr>
+                            <th class="recruit__flow__head text-dark pl-lg-5" scope="row">仕事の内容</th>
+                            <td class="recruit__flow__data text-secondary">歯科衛生士業務全般
+                                <ul class="recruit__flow__list pl-0">
+                                    <li class="recruit__flow__item">診療補助</li>
+                                    <li class="recruit__flow__item">口腔内管理</li>
+                                    <li class="recruit__flow__item">ブラッシング指導等</li>
+                                    <li class="recruit__flow__item">歯周病治療</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="recruit__flow__head text-dark pl-lg-5" scope="row">賃金</th>
+                            <td class="recruit__flow__data text-secondary">月給
+                                <ol class="recruit__flow__oList pl-0">
+                                    <li class="recruit__flow__oItem">基本給</li>
+                                    <li class="recruit__flow__oItem">衛生士手当</li>
+                                    <li class="recruit__flow__oItem">皆勤手当</li>
+                                </ol>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="recruit__flow__head text-dark pl-lg-5" scope="row">通勤手当</th>
+                            <td class="recruit__flow__data text-secondary">実費支給</td>
+                        </tr>
+                        <tr>
+                            <th class="recruit__flow__head text-dark pl-lg-5" scope="row">就業時間</th>
+                            <td class="recruit__flow__data text-secondary">平日）09:00～19:15<br>土曜）09:00～18:15</td>
+                        </tr>
+                        <tr>
+                            <th class="recruit__flow__head text-dark pl-lg-5" scope="row">休憩時間</th>
+                            <td class="recruit__flow__data text-secondary">90分</td>
+                        </tr>
+                        <tr>
+                            <th class="recruit__flow__head text-dark pl-lg-5" scope="row">休日</th>
+                            <td class="recruit__flow__data text-secondary">木(祝日のある週も休み)、日、祝</td>
+                        </tr>
+                        <tr>
+                            <th class="recruit__flow__head text-dark pl-lg-5" scope="row">週休二日</th>
+                            <td class="recruit__flow__data text-secondary">毎週</td>
+                        </tr>
+                        <tr>
+                            <th class="recruit__flow__head text-dark pl-lg-5" scope="row">年間休日数</th>
+                            <td class="recruit__flow__data text-secondary">120日</td>
+                        </tr>
+                        <tr>
+                            <th class="recruit__flow__head text-dark pl-lg-5" scope="row">マイカー通勤</th>
+                            <td class="recruit__flow__data text-secondary">要相談</td>
+                        </tr>
+                        <tr>
+                            <th class="recruit__flow__head text-dark pl-lg-5" scope="row">選考方法</th>
+                            <td class="recruit__flow__data text-secondary">面接、書類選考</td>
+                        </tr>
+                        <tr>
+                            <th class="recruit__flow__head text-dark pl-lg-5" scope="row">特記事項</th>
+                            <td class="recruit__flow__data text-secondary">
+                                <ul class="recruit__flow__list pl-0">
+                                    <li class="recruit__flow__item">入社後雇用保険、労災保険、歯科医師国保加入予定</li>
+                                    <li class="recruit__flow__item">昇給と賞与あり</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <h3 class="recruit__flow__subTitle text-dark p-2 p-lg-4">歯科衛生士（パート）</h3>
+                    <table class="recruit__flow__table table table-striped border-bottom mb-5">
+                        <tr>
+                            <th class="recruit__flow__head text-dark pl-lg-5" scope="row">就業形態</th>
+                            <td class="recruit__flow__data text-secondary">パート</td>
+                        </tr>
+                        <tr>
+                            <th class="recruit__flow__head text-dark pl-lg-5" scope="row">仕事の内容</th>
+                            <td class="recruit__flow__data text-secondary">歯科衛生士業務全般
+                                <ul class="recruit__flow__list pl-0">
+                                    <li class="recruit__flow__item">診療補助</li>
+                                    <li class="recruit__flow__item">口腔内管理</li>
+                                    <li class="recruit__flow__item">ブラッシング指導等</li>
+                                    <li class="recruit__flow__item">歯周病治療</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="recruit__flow__head text-dark pl-lg-5" scope="row">賃金</th>
+                            <td class="recruit__flow__data text-secondary">時給</td>
+                        </tr>
+                        <tr>
+                            <th class="recruit__flow__head text-dark pl-lg-5" scope="row">通勤手当</th>
+                            <td class="recruit__flow__data text-secondary">実費支給</td>
+                        </tr>
+                        <tr>
+                            <th class="recruit__flow__head text-dark pl-lg-5" scope="row">週所定労働日数</th>
+                            <td class="recruit__flow__data text-secondary">週2日～5日</td>
+                        </tr>
+                        <tr>
+                            <th class="recruit__flow__head text-dark pl-lg-5" scope="row">休日</th>
+                            <td class="recruit__flow__data text-secondary">木(祝日のある週も休み)、日、祝</td>
+                        </tr>
+                        <tr>
+                            <th class="recruit__flow__head text-dark pl-lg-5" scope="row">必要な免許・資格</th>
+                            <td class="recruit__flow__data text-secondary">歯科衛生士免許</td>
+                        </tr>
+                        <tr>
+                            <th class="recruit__flow__head text-dark pl-lg-5" scope="row">マイカー通勤</th>
+                            <td class="recruit__flow__data text-secondary">要相談</td>
+                        </tr>
+                        <tr>
+                            <th class="recruit__flow__head text-dark pl-lg-5" scope="row">選考方法</th>
+                            <td class="recruit__flow__data text-secondary">面接、書類選考</td>
+                        </tr>
+                        <tr>
+                            <th class="recruit__flow__head text-dark pl-lg-5" scope="row">特記事項</th>
+                            <td class="recruit__flow__data text-secondary">
+                                <ul class="recruit__flow__list pl-0">
+                                    <li class="recruit__flow__item">入社後雇用保険、労災保険加入予定</li>
+                                    <li  class="recruit__flow__item">労働条件により雇用保険加入</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+                    
+                    <h3 class="recruit__flow__subTitle text-dark p-2 p-lg-4">歯科助手・受付</h3>
+                    <table class="recruit__flow__table table table-striped border-bottom mb-5">
+                        <tr>
+                            <th class="recruit__flow__head text-dark pl-lg-5" scope="row">就業形態</th>
+                            <td class="recruit__flow__data text-secondary">フルタイム</td>
+                        </tr>
+                        <tr>
+                            <th class="recruit__flow__head text-dark pl-lg-5" scope="row">仕事の内容</th>
+                            <td class="recruit__flow__data text-secondary">
+                                <ul class="recruit__flow__list pl-0">
+                                    <li class="recruit__flow__item">電話応対</li>                                                                               
+                                    <li class="recruit__flow__item">器具消毒滅菌等</li>
+                                    <li class="recruit__flow__item">診療補助診療補助</li>                                   
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="recruit__flow__head text-dark pl-lg-5" scope="row">賃金</th>
+                            <td class="recruit__flow__data text-secondary">月給
+                                <ol class="recruit__flow__oList pl-0">
+                                    <li class="recruit__flow__oItem">基本給</li>
+                                    <li class="recruit__flow__oItem">職務手当</li>
+                                    <li class="recruit__flow__oItem">皆勤手当</li>
+                                </ol>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="recruit__flow__head text-dark pl-lg-5" scope="row">通勤手当</th>
+                            <td class="recruit__flow__data text-secondary">実費支給</td>
+                        </tr>
+                        <tr>
+                            <th class="recruit__flow__head text-dark pl-lg-5" scope="row">就業時間</th>
+                            <td class="recruit__flow__data text-secondary">平日）09:00～19:15<br>土曜）09:00～18:15</td>
+                        </tr>
+                        <tr>
+                            <th class="recruit__flow__head text-dark pl-lg-5" scope="row">休憩時間</th>
+                            <td class="recruit__flow__data text-secondary">90分</td>
+                        </tr>
+                        <tr>
+                            <th class="recruit__flow__head text-dark pl-lg-5" scope="row">休日</th>
+                            <td class="recruit__flow__data text-secondary">木(祝日のある週も休み)、日、祝</td>
+                        </tr>
+                        <tr>
+                            <th class="recruit__flow__head text-dark pl-lg-5" scope="row">週休二日</th>
+                            <td class="recruit__flow__data text-secondary">毎週</td>
+                        </tr>
+                        <tr>
+                            <th class="recruit__flow__head text-dark pl-lg-5" scope="row">年間休日数</th>
+                            <td class="recruit__flow__data text-secondary">120日</td>
+                        </tr>
+                        <tr>
+                            <th class="recruit__flow__head text-dark pl-lg-5" scope="row">マイカー通勤</th>
+                            <td class="recruit__flow__data text-secondary">要相談</td>
+                        </tr>
+                        <tr>
+                            <th class="recruit__flow__head text-dark pl-lg-5" scope="row">選考方法</th>
+                            <td class="recruit__flow__data text-secondary">面接、書類選考</td>
+                        </tr>
+                        <tr>
+                            <th class="recruit__flow__head text-dark pl-lg-5" scope="row">特記事項</th>
+                            <td class="recruit__flow__data text-secondary">
+                                <ul class="recruit__flow__list pl-0">
+                                    <li class="recruit__flow__item">入社後、雇用保険、労災保険、歯科医師国保加入予定</li>
+                                    <li  class="recruit__flow__item">昇給と賞与は支給あり</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <h3 class="recruit__flow__subTitle text-dark p-2 p-lg-4">歯科助手（パート）</h3>
+                    <table class="recruit__flow__table table table-striped border-bottom">
+                        <tr>
+                            <th class="recruit__flow__head text-dark pl-lg-5" scope="row">雇用形態</th>
+                            <td class="recruit__flow__data text-secondary">歯科助手</td>
+                        </tr>
+                        <tr>
+                            <th class="recruit__flow__head text-dark pl-lg-5" scope="row">就業形態</th>
+                            <td class="recruit__flow__data text-secondary">パート</td>
+                        </tr>
+                        <tr>
+                            <th class="recruit__flow__head text-dark pl-lg-5" scope="row">仕事の内容</th>
+                            <td class="recruit__flow__data text-secondary">
+                                <ul class="recruit__flow__list pl-0">
+                                    <li class="recruit__flow__item">電話応対</li>
+                                    <li class="recruit__flow__item">器具消毒滅菌等</li>
+                                    <li class="recruit__flow__item">診療補助業務</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="recruit__flow__head text-dark pl-lg-5" scope="row">賃金</th>
+                            <td class="recruit__flow__data text-secondary">時給</td>
+                        </tr>
+                        <tr>
+                            <th class="recruit__flow__head text-dark pl-lg-5" scope="row">通勤手当</th>
+                            <td class="recruit__flow__data text-secondary">実費支給</td>
+                        </tr>
+                        <tr>
+                            <th class="recruit__flow__head text-dark pl-lg-5" scope="row">就業時間</th>
+                            <td class="recruit__flow__data text-secondary">
+                                <ol class="recruit__flow__oList pl-0">
+                                    <li class="recruit__flow__nItem">09:00～12:00</li>
+                                    <li class="recruit__flow__nItem">12:00～15:00</li>
+                                    <li class="recruit__flow__nItem">16:15～19:15又は09:00～19:15の間の3時間以上基本給</li>
+                                </ol>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="recruit__flow__head text-dark pl-lg-5" scope="row">週所定労働日数</th>
+                            <td class="recruit__flow__data text-secondary">週2日～5日</td>
+                        </tr>
+                        <tr>
+                            <th class="recruit__flow__head text-dark pl-lg-5" scope="row">休日</th>
+                            <td class="recruit__flow__data text-secondary">木(祝日のある週も休み)、日、祝</td>
+                        </tr>
+                        <tr>
+                            <th class="recruit__flow__head text-dark pl-lg-5" scope="row">週休二日</th>
+                            <td class="recruit__flow__data text-secondary">毎週</td>
+                        </tr>
+                        <tr>
+                            <th class="recruit__flow__head text-dark pl-lg-5" scope="row">マイカー通勤</th>
+                            <td class="recruit__flow__data text-secondary">要相談</td>
+                        </tr>
+                        <tr>
+                            <th class="recruit__flow__head text-dark pl-lg-5" scope="row">選考方法</th>
+                            <td class="recruit__flow__data text-secondary">面接、書類選考</td>
+                        </tr>
+                        <tr>
+                            <th class="recruit__flow__head text-dark pl-lg-5" scope="row">特記事項</th>
+                            <td class="recruit__flow__data text-secondary">
+                                <ul class="recruit__flow__list pl-0">
+                                    <li class="recruit__flow__item">入社後、労災保険加入予定</li>
+                                    <li  class="recruit__flow__item">労働条件により雇用保険加入</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="reserve" id="reserve">
+            <h2 class="reserve__title">ご予約</h2>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="reserve__box col-lg-10 offset-lg-1 col-xl-8 offset-xl-2">
+                        <h3 class="reserve__subTitle">お電話でのご予約</h3>
+                        <p class="reserve__tel"><a href="tel:082XXXXXXX" class="text-info">(082)XXX-XXXX</a></p>
+                        <p class="reserve__subText text-secondary">※おかけ間違いにご注意ください</p>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="reserve__box col-lg-10 offset-lg-1 col-xl-8 offset-xl-2">
+                        <h3 class="reserve__subTitle">２４時間インターネット予約</h3>
+                        <p class="reserve__text text-secondary">初診の方は、便利なインターネット予約をご利用ください。</p>
+                        <br>
+                        <p class="reserve__subText text-secondary">&#x203B;予約確定後、こちらから確認のご連絡をさせて頂きます。<br>
+                            &#x203B;<strong>ネット予約は初診の方のみ対応しております。</strong>再診の方はお電話にてご予約ください。<br>
+                            &#x203B;ご希望の時間が表示されなくても予約が可能な場合がございます。お気軽にお問い合わせ下さい。</p>
+                        <p class="reserve__link"><a href="#" class="btn btn-info">インターネット予約へ移動</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer" id="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-md-8 offset-md-2">
+                    <ul class="footer__link">
+                        <li class="footer__link__item"><a href="index.html#top"><i class="fas fa-home"></i></a></li>
+                        <li class="footer__link__item"><a href="index.html#greet">ごあいさつ</a></li>
+                        <li class="footer__link__item"><a href="medical.html">診療内容</a></li>
+                        <li class="footer__link__item"><a href="clinic.html">医院紹介</a></li>
+                        <li class="footer__link__item"><a href="#recruit">求人情報</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-8 offset-md-2">
+                    <ul class="footer__contact">
+                        <li class="footer__contact__item">〒739-XXXX</li>
+                        <li class="footer__contact__item">広島県廿日市市宮島口X-XX-XX</li>
+                        <li class="footer__contact__item">082-XXX-XXXX</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <p class="footer__copyright">&copy; Hirose dental clinic. All rights reserved.</p>
+    </footer>
+
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
