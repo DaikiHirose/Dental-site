@@ -1,0 +1,843 @@
+@charset "utf-8";
+
+//共通設定 ここから
+.selector-for-some-widget {
+    box-sizing: content-box;
+}
+
+body::before {
+    content: "";
+    width: 100%;
+    height: 100vh;
+    background-image: url("../images/top.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -10;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #f7f7f7;
+}
+
+.btn {
+    text-decoration: none;
+}
+
+h1 {
+    font-family: 'Kosugi Maru', sans-serif;
+}
+
+@mixin title {
+    font-size: 2em;
+    text-align: center;
+    padding: 1em 0 2em;
+
+    @media (max-width: 575.98px) {
+        font-size: 1.2em;
+    }
+}
+
+@mixin btn {
+    width: 200px;
+    margin: 0 auto;
+    padding: 1em;
+    border-radius: 3px;
+}
+
+time {
+    font-weight: 600;
+}
+
+hr {
+    margin: .7em 0;
+}
+//共通設定 ここまで
+
+// ヘッダー領域 ここから
+.header {
+    width: 100%;
+    height: 4em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+
+    &__title {
+        font-size: 2em;
+        margin-left: 5%;
+
+        @media (max-width: 575.98px) {
+            font-size: 1.2em;
+        }
+    }
+
+    &__menu {
+        font-size: 1.5em;
+        margin-right: 3%;
+
+        @media (max-width: 575.98px) {
+            font-size: 1.2em;
+        }
+    }
+}
+// ヘッダー領域 ここまで
+
+// ドロワーメニュー  ここから
+.gnavi {
+    .btn {
+        @include btn;
+    }
+}
+
+.drawer-menu-item {
+    padding: 0.2em 1.5em;
+}
+
+.drawer-hamburger-icon,
+.drawer-hamburger-icon:after,
+.drawer-hamburger-icon:before {
+    background-color: #f7f7f7;
+    height: 1.5px;
+}
+
+.drawer-hamburger {
+    padding-right: 1em;
+}
+
+.drawer--right.drawer-open .drawer-hamburger {
+    right: 0px;
+}
+
+.drawer--right.drawer-open .drawer-hamburger-icon:after,
+.drawer--right.drawer-open .drawer-hamburger-icon:before {
+    background-color: #444;
+}
+// ドロワーメニュー  ここまで
+
+// トップ領域 ここから
+.top {
+    width: 100%;
+    height: 90vh;
+    position: relative;
+
+    &__box {
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &__title {
+        font-size: 3em;
+
+        @media (max-width: 991.98px) {
+            font-size: 2em;
+        }
+
+        @media (max-width: 575.98px) {
+            font-size: 1.5em;
+        }
+    }
+
+    &__text {
+        font-size: 1.5rem;
+
+        @media (max-width: 991.98px) {
+            font-size: 1.2em;
+        }
+
+        @media (max-width: 575.98px) {
+            font-size: .8em;
+        }
+    }
+
+    &__link {
+        @include btn;
+    }
+}
+// トップ領域 ここまで
+
+// あいさつ ここから
+.greet {
+    width: 100%;
+    padding: 3em 0;
+
+    &__title {
+        @include title;
+    }
+
+    &__content {
+        img {
+            width: 100%;
+            border-radius: 3%;
+        }
+    }
+
+    &__text {
+        font-size: 1.1em;
+        line-height: 1.8em;
+        text-align: justify;
+
+        @media (max-width: 575.98px) {
+            font-size: .9em;
+        }
+    }
+
+    &__link {
+        margin: 0 auto;
+        padding: 1em;
+        border-radius: 3px;
+        text-align: center;
+    }
+
+    &__subText {
+        font-size: 1.1em;
+        line-height: 1.8em;
+        text-align: justify;
+        margin-top: 2em;
+
+        @media (max-width: 575.98px) {
+            font-size: .9em;
+        }
+    }
+}
+// あいさつ ここまで
+
+// 当院について ここから
+.info {
+    width: 100%;
+    padding: 3em 0;
+    background-color: #f7f7f7;
+
+    &__height {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__box {
+        padding: 10%;
+        background-color: #fff;
+        border-radius: 3px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 100%;
+            border-radius: 3px;
+        }
+    }
+
+    &__title {
+        font-size: 1.5em;
+        padding: .8em;
+    }
+
+    &__text {
+        font-size: 1.1em;
+        line-height: 1.8em;
+
+        @media (max-width: 575.98px) {
+            font-size: .9em;
+        }
+    }
+}
+// 当院について ここまで
+
+// 院長あいさつ ここから
+.intro {
+    width: 100%;
+    padding: 3em 0;
+
+    &__title {
+        @include title;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    &__name {
+        font-size: 2em;
+        margin-bottom: 1em;
+
+        @media (max-width: 767.98px) {
+            font-size: 1.5em;
+            text-align: center;
+        }
+    }
+
+    &__small {
+        font-size: .7em;
+    }
+
+    &__list {
+        font-size: 1.1em;
+
+        @media (max-width: 767.98px) {
+            font-size: .9em;
+            text-align: center;
+        }
+    }
+}
+// 院長あいさつ ここまで
+
+// 診療時間・アクセス ここから
+.ginfo {
+    width: 100%;
+    padding: 3em 0;
+    background-color: #f7f7f7;
+
+    &__height {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.schedule {
+    width: 100%;
+    background-color: #fff;
+    padding: 3em 0;
+
+    &__title {
+        @include title;
+    }
+
+    &__table {
+        width: 100%;
+    }
+
+    &__row {
+        text-align: center;
+    }
+
+    &__text {
+        text-align: center;
+        padding: 1.5em;
+
+        @media (max-width: 575.98px) {
+            font-size: .9em;
+        }
+    }
+
+    &__g {
+        height: 0;
+        overflow: hidden;
+        padding-bottom: 100%;
+        padding-top: 30px;
+        position: relative;
+
+        iframe {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.access {
+    width: 100%;
+    background-color: #fff;
+    padding: 3em 0;
+
+    &__title {
+        @include title;
+    }
+
+    &__g {
+        height: 0;
+        overflow: hidden;
+        padding-bottom: 100%;
+        position: relative;
+
+        iframe {
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    &__text {
+        font-size: 1.1em;
+        line-height: 1.8em;
+        margin-bottom: 0;
+
+        @media (max-width: 575.98px) {
+            font-size: .9em;
+        }
+    }
+}
+// 診療時間・アクセス ここまで
+
+// 新着情報 ここから
+.news {
+    width: 100%;
+    padding: 3em 0;
+    background-color: #fff;
+
+    &__title {
+        @include title;
+    }
+
+    &__list {
+        display: flex;
+
+        @media (max-width: 575.98px) {
+            font-size: .9em;
+        }
+
+        &__title {
+            margin-right: 2em;
+        }
+    }
+}
+// 新着情報 ここまで
+
+// 予約 ここから
+.reserve {
+    width: 100%;
+    padding: 3em 0;
+    background-color: #f7f7f7;
+
+    &__title {
+        @include title;
+    }
+
+    &__box {
+        padding: 2em;
+        text-align: center;
+        background-color: #fff;
+    }
+
+    &__subTitle {
+        font-size: 1.5em;
+
+        @media (max-width: 575.98px) {
+            font-size: 1.2em;
+        }
+    }
+
+    &__tel {
+        font-size: 2.5em;
+
+        @media (max-width: 575.98px) {
+            font-size: 1.5em;
+        }
+    }
+
+    &__subText {
+        display: inline-block;
+        text-align: left;
+
+        @media (max-width: 575.98px) {
+            font-size: .9em;
+        }
+    }
+}
+// 予約 ここまで
+
+// 問い合わせ ここから
+.contact {
+    width: 100%;
+    padding: 3em 0;
+    background-color: #fff;
+
+    &__title {
+        @include title;
+    }
+
+    &__text {
+        text-align: center;
+    }
+}
+// 問い合わせ ここまで
+
+// メディカル領域 ここから
+.medical {
+    width: 100%;
+    height: 40vh;
+    position: relative;
+
+    &__box {
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &__title {
+        font-size: 3em;
+
+        @media (max-width: 991.98px) {
+            font-size: 1.8em;
+        }
+
+        @media (max-width: 575.98px) {
+            font-size: 1.2em;
+        }
+    }
+
+    &__text {
+        font-size: 1.5em;
+
+        @media (max-width: 991.98px) {
+            font-size: 1em;
+        }
+
+        @media (max-width: 575.98px) {
+            font-size: .7em;
+        }
+    }
+}
+// メディカル領域 ここまで
+
+// 診療内容 ここから
+.service {
+    width: 100%;
+    padding: 3em 0;
+    background-color: #fff;
+
+    &__title {
+        text-align: center;
+        font-size: 1.5em;
+
+        @media (max-width: 575.98px) {
+            font-size: 1.2em;
+        }
+    }
+
+    &__subTitle {
+        font-size: 1.1em;
+        text-align: center;
+
+        @media (max-width: 575.98px) {
+            font-size: .9em;
+        }
+
+        &__inner {
+            font-size: 1.1em;
+            text-align: left;
+
+            @media (max-width: 575.98px) {
+                font-size: .9em;
+            }
+        }
+    }
+
+    &__text {
+        font-size: 1.1em;
+        line-height: 1.8em;
+        text-align: justify;
+
+        @media (max-width: 575.98px) {
+            font-size: .9em;
+        }
+    }
+}
+// 診療内容 ここまで
+
+// 医院紹介 ここから
+.clinic {
+    width: 100%;
+    height: 40vh;
+    position: relative;
+
+    &__box {
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &__title {
+        font-size: 3em;
+
+        @media (max-width: 991.98px) {
+            font-size: 1.8em;
+        }
+
+        @media (max-width: 575.98px) {
+            font-size: 1.2em;
+        }
+    }
+
+    &__text {
+        font-size: 1.5em;
+
+        @media (max-width: 991.98px) {
+            font-size: 1em;
+        }
+
+        @media (max-width: 575.98px) {
+            font-size: .7em;
+        }
+    }
+
+    &__intro {
+        width: 100%;
+        padding: 3em 0;
+        background-color: #fff;
+
+        &__title {
+            text-align: center;
+            font-size: 2em;
+
+            @media (max-width: 575.98px) {
+                font-size: 1.2em;
+            }
+        }
+
+        &__subTitle {
+            font-size: 1.5em;
+            text-align: center;
+
+            @media (max-width: 575.98px) {
+                font-size: .9em;
+            }
+        }
+
+        &__box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        &__text {
+            font-size: 1.1em;
+            line-height: 1.8em;
+            text-align: justify;
+
+            @media (max-width: 575.98px) {
+                font-size: .9em;
+            }
+        }
+
+        &__img {
+            img {
+                width: 100%;
+                border-radius: 3px;
+            }
+        }
+    }
+
+    &__flow {
+        width: 100%;
+        padding: 3em 0;
+        background-color: #fff;
+
+        &__title {
+            text-align: center;
+            font-size: 2em;
+
+            @media (max-width: 575.98px) {
+                font-size: 1.2em;
+            }
+        }
+
+        &__box {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        &__content {
+            margin: 2em 0;
+        }
+
+        &__subTitle {
+            font-size: 1.5em;
+
+            @media (max-width: 575.98px) {
+                font-size: .9em;
+            }
+        }
+
+        &__text {
+            font-size: 1.1em;
+            line-height: 1.8em;
+            text-align: justify;
+
+            @media (max-width: 575.98px) {
+                font-size: .9em;
+            }
+        }
+    }
+}
+// 医院紹介 ここまで
+
+// 求人情報 ここから
+.recruit {
+    width: 100%;
+    height: 40vh;
+    position: relative;
+
+    &__box {
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &__title {
+        font-size: 3em;
+
+        @media (max-width: 991.98px) {
+            font-size: 1.8em;
+        }
+
+        @media (max-width: 575.98px) {
+            font-size: 1.2em;
+        }
+    }
+
+    &__text {
+        font-size: 1.5em;
+
+        @media (max-width: 991.98px) {
+            font-size: 1em;
+        }
+
+        @media (max-width: 575.98px) {
+            font-size: .7em;
+        }
+    }
+
+    &__contact {
+        background-color: #fff;
+        padding: 4em 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        &__text {
+            font-size: 1.1em;
+            line-height: 1.8em;
+            text-align: justify;
+
+            @media (max-width: 575.98px) {
+                font-size: .9em;
+            }
+        }
+    }
+
+    &__flow {
+        width: 100%;
+        padding: 3em 0;
+        background-color: #fff;
+
+        &__subTitle {
+            font-size: 1.5em;
+
+            @media (max-width: 575.98px) {
+                font-size: .8em;
+            }
+        }
+
+        &__head,
+        &__data {
+            font-size: 1.1em;
+            line-height: 1.8em;
+
+            @media (max-width: 575.98px) {
+                font-size: .8em;
+            }
+        }
+
+        &__head {
+            width: 35%;
+        }
+
+        &__data {
+            width: 65%;
+        }
+
+        &__item {
+            list-style-type: disc;
+            list-style-position: inside;
+        }
+
+        &__oItem {
+            list-style-type: lower-alpha;
+            list-style-position: inside;
+        }
+
+        &__nItem {
+            list-style-type: decimal;
+            list-style-position: inside;
+        }
+    }
+}
+// 求人情報 ここまで
+
+// フッター領域 ここから
+.footer {
+    width: 100%;
+    padding: 3em 0;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    &__link {
+        width: 100%;
+        padding: 0;
+        line-height: 1.8;
+        display: flex;
+        justify-content: center;
+
+        @media (max-width: 450px) {
+            display: block;
+            text-align: center;
+        }
+
+        @media (max-width: 575.98px) {
+            font-size: .9em;
+        }
+
+        &__item {
+            margin: 2%;
+        }
+    }
+
+    &__contact {
+        padding: 0;
+        text-align: center;
+
+        @media (max-width: 575.98px) {
+            font-size: .9em;
+        }
+    }
+
+    &__copyright {
+        text-align: center;
+
+        @media (max-width: 575.98px) {
+            font-size: .9em;
+        }
+    }
+}
+// フッター領域 ここまで
